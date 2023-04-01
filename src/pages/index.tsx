@@ -25,7 +25,7 @@ export default function Home() {
       const response = await axios.get<NewsData>(API_URL);
       setArticles(response.data.articles);
     } catch (error: any) {
-      console.error(error);
+      console.log(error);
     }
   };
 
